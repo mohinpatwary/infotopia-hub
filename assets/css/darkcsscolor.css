@@ -1,0 +1,64 @@
+/* dark css */
+
+.dark {
+  --color-background: #262626;
+  --color-background-4: #1e1e1e;
+  --color-body-background: #1e1e1e;
+  --color-background-2: 262626;
+  --color-foreground: #f1f1f1;
+  --color-border: #707070;
+  --color-shadow: rgba(241, 241, 241, 0.1);
+}
+
+.dark .color-accent-2 {
+  --color-foreground: #f1f1f1;
+}
+.dark .color-accent-7 {
+  --color-foreground: #f1f1f1;
+}
+.dark .color-accent-3 {
+  --color-foreground: #f1f1f1;
+}
+
+.dark .slick_navigation > button {
+  background: #707070;
+}
+
+.dark--version .light--mode__icon {
+  display: inline-block;
+}
+
+.dark--version .dark--mode__icon {
+  display: none;
+}
+.light--mode__icon {
+  display: none;
+}
+
+.dark-img {
+  display: none;
+}
+.dark .light-img {
+  display: none;
+}
+.dark .dark-img {
+  display: block;
+}
+
+.slick-slide .dark-img {
+  display: none;
+}
+.dark .slick-slide .light-img {
+  display: none;
+}
+.dark .slick-slide .dark-img {
+  display: block;
+}
+.dark .footer_bg_img_style {
+  background: url(../img/other/dark-bg-1.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+}
