@@ -377,7 +377,7 @@
                               </div>
                               <div class="chart_select-items width-150">
                                   <select class="select_option">
-                                      <option selected disabled value="1"> 2023</option>
+                                      <option selected value="1"> 2023</option>
                                       <option value="2"> </option>
                                       <option value="3">  </option>
                                       <option value="4">  </option>
@@ -400,7 +400,7 @@
                             </div>
                             <div class="chart_select-items width-150">
                                 <select class="select_option">
-                                    <option selected disabled value="1"> 2023</option>
+                                    <option selected value="1"> 2023</option>
                                     <option value="2"> </option>
                                     <option value="3">  </option>
                                     <option value="4">  </option>
@@ -819,7 +819,7 @@
                                     </div>
                                     <div class="analytics__chart--box radar--chart__container">
                                         <div class="analytics__chart--field">
-                                            <canvas id="RegUsersPerformanceChart"></canvas>
+                                          <div id="radar--chart"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1206,6 +1206,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <!-- Apex chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
     <script>
       /**
        * @video Guideline https://youtu.be/V0oQfVL64Wo
@@ -1254,46 +1257,53 @@
       };
       const perMonthChart = new Chart(document.getElementById("RegUsersPerMonthChart"), RegUsersPerMonthConfig);
 
-    /* RegUsers Performance Chart */
-    const regUsersData = {
-        labels: [
-            'Marketing',
-            'Real Estate',
-            'Mentoring',
-            'Human Resources',
-            'Management',
-            'Leadership'
+      // Radar chart options
+      var options = {
+        series: [
+          {
+            name: "Series 1",
+            data: [80, 10, 100, 60, 70, 50],
+          },
         ],
-        datasets: [ {
-            data: [28, 48, 40, 19, 60, 27, 28],
-            fill: true,
-            backgroundColor: '#D1D0E0',
-            borderColor: '#74C3B3',
-            pointBackgroundColor: '#74C3B3',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)',
-        }]
-    };
-    const RegUsersPerformanceConfig = {
-        type: 'radar',
-        data: regUsersData,
-        options: {
-            responsive: true,
-            elements: {
-                line: {
-                    borderWidth: 3
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
+        dataLabels: {
+          enabled: false,
         },
-    };
-    
-     const performanceChart = new Chart(document.getElementById("RegUsersPerformanceChart"), RegUsersPerformanceConfig);
+        chart: {
+          toolbar: {
+            show: false,
+          },
+          height: 400,
+          type: "radar",
+          dropShadow: {
+            enabled: false,
+            blur: 1,
+            left: 1,
+            top: 1,
+          },
+          fill: {
+  colors: ['#F44336', '#E91E63', '#9C27B0']
+}
+        },
+        stroke: {
+          width: 2,
+          colors: ["#74C3B3"],
+        },
+        fill: {
+          opacity: 0,
+        },
+        markers: {
+          size: 4,
+          colors: "#74C3B3",
+        },
+        xaxis: {
+          categories: ["Innovation", "Culture", "Vision", "Strategy", "Power", "Leadership"],
+        }
+      };
+      var chart = new ApexCharts(
+        document.querySelector("#radar--chart"),
+        options
+      );
+      chart.render();
     </script>
 
     

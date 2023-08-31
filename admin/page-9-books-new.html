@@ -104,12 +104,12 @@
        CMS Menu</a>
        <ul>
           <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Overview.svg" alt="img"> Overview</a></li>
-          <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> Comments</a></li>
           <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Articles_3.svg" alt="img"> Articles</a></li>
-          <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Words.svg" alt="img"> Words</a></li>
           <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Books.svg" alt="img"> Books</a></li>
+          <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> Comments</a></li>
+          <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Words.svg" alt="img"> Words</a></li>
           <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Analytics.svg" alt="img"> Analytics</a></li>
-       </ul>
+      </ul>
     </li>
   </ul>
 </nav>
@@ -199,28 +199,10 @@
               <li class="cms__menu--items color-border-accent">
                 <a class="cms__menu--link" href="#">
                   <img
-                    src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg"
-                    alt="icon"
-                  />
-                  <span>Comments</span>
-                </a>
-              </li>
-              <li class="cms__menu--items color-border-accent">
-                <a class="cms__menu--link" href="#">
-                  <img
                     src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Articles_3.svg"
                     alt="icon"
                   />
                   <span>Articles</span>
-                </a>
-              </li>
-              <li class="cms__menu--items color-border-accent">
-                <a class="cms__menu--link" href="#">
-                  <img
-                    src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Words.svg"
-                    alt="icon"
-                  />
-                  <span>Words</span>
                 </a>
               </li>
               <li class="cms__menu--items color-border-accent">
@@ -230,6 +212,24 @@
                     alt="icon"
                   />
                   <span>Books</span>
+                </a>
+              </li>
+              <li class="cms__menu--items color-border-accent">
+                <a class="cms__menu--link" href="#">
+                  <img
+                    src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg"
+                    alt="icon"
+                  />
+                  <span>Comments</span>
+                </a>
+              </li>
+              <li class="cms__menu--items color-border-accent">
+                <a class="cms__menu--link" href="#">
+                  <img
+                    src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Words.svg"
+                    alt="icon"
+                  />
+                  <span>Words</span>
                 </a>
               </li>
               <li class="cms__menu--items color-border-accent">
@@ -477,7 +477,7 @@
                                       </g>
                                     </svg>                                                                       
                                   </button>
-                                  <input placeholder="00" class="quantity" name="quantity" min="1" max="100" type="number">
+                                  <input placeholder="0" class="quantity" name="quantity" min="1" max="100" type="number">
                                   <button class="button__bottom plus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11.457" height="7.457" viewBox="0 0 11.457 7.457">
                                       <g id="Group_7500" data-name="Group 7500" transform="translate(-873.674 -384.891)">
@@ -581,7 +581,7 @@
                         <!-- book profile content .\ -->
                         <div class="button__area d-flex justify-content-center mt-70">
                           <button class="outline__button outline--button">Cancel</button>
-                          <button class="solid__button solid--button border-0" data-bs-toggle="modal" data-bs-target="#modalToggle">Update</button>
+                          <button class="solid__button solid--button border-0" data-bs-toggle="modal" data-bs-target="#modalToggle">Create</button>
                         </div>
                       </div>
                       <!-- book profile area .\ -->
@@ -755,7 +755,7 @@
               />
             </div>
             <p class="modal_desc">
-              Please confirm if you wish to Update the article.
+              Please confirm to create this book.
             </p>
             <div class="modal_btn-area">
               <button
@@ -785,7 +785,7 @@
                 alt="img"
               />
             </div>
-            <p class="modal_desc">The article has been Update.</p>
+            <p class="modal_desc">This book has been created.</p>
             <div class="modal_btn-area">
               <button class="solid__button solid--button border-0" data-bs-dismiss="modal">Return</button>
             </div>

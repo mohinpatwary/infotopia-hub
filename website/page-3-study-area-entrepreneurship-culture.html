@@ -134,6 +134,14 @@
       <li>
         <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon"> Accessibility</a>
       </li>
+      <li>
+        <button class="zoom__in"><img class="articles_mobile_menu_icon_img zoom" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="icon">  Zoom In</button>
+      </li>
+      <li>
+        <button class="zoom__out"><svg class="articles_mobile_menu_icon_img" xmlns="http://www.w3.org/2000/svg" width="30" height="1.5" viewBox="0 0 14 1.5">
+          <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+        </svg>  Zoom Out</button>
+      </li>
     </ul>
   </nav>
   <!-- Cms article end -->
@@ -143,9 +151,8 @@
     <!-- header area start -->
     <header class="website__header--section z-index-99 position-relative">
       <div class="container-fluid p-0">
-        <div class="header__inner--style2 position-relative d-flex justify-content-between align-items-center">
-          
-            <div class="website__main--logo">
+        <div class="header__inner--style2 header__sticky d-flex justify-content-between align-items-center">
+            <div class="website__main--logo  ">
               <a class="d-flex align-items-center" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
                   <defs>
@@ -159,7 +166,7 @@
                   >Infotopia<span class="website__main--logo__text--inner">Hub</span></span>
               </a>
             </div>
-            <div class="main__menu">
+            <div class="main__menu laptop_device_none">
               <nav>
                 <ul class="d-flex">
                   <li><a href="#">Home </a></li>
@@ -171,15 +178,15 @@
                 </ul>
               </nav>
             </div>
-            <div class="header__website--account__style2 medium_device_none">
+            <div class="header__website--account__style2 laptop_device_none">
                 <ul class="d-flex align-items-center">
                   <li><a href="#">Login</a></li>
                   <li><a href="#">Sign Up</a></li>
                 </ul>
             </div>
-            <div class="main__header--right medium_device_block d-flex align-items-center">
-              <div class="header__account d-flex">
-                <a class="header__account--icon cms_article-icon d-none " href="#">
+            <div class="main__header--right laptop_device_block d-flex align-items-center">
+              <div class="header__account laptop_v_block d-flex">
+                <a class="header__account--icon cms_article-icon " href="#">
                   <img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Sub_Menu.svg" alt="icon">
                 </a>
                 <a class="mobile__menu--open__btn" href="#"><img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Menu.svg" alt="img"></a>
@@ -220,44 +227,13 @@
 
                   </div>
               </div>
-              <div class="hero_content-style3 text-center">
-                  <h2 class="hero_content-style3_title mb-50">Entrepreneurship</h2>
-                  <ul class="article_menu-style4 mobile_none d-flex justify-content-center">
-                    <li><a class="color-accent-11" href="#">All</a></li>
-                    <li><a class="color-accent-11 active" href="#">Culture</a></li>
-                    <li><a class="color-accent-11" href="#">Leadership</a></li>
-                    <li><a class="color-accent-11" href="#">Systems</a></li>
-                    <li><a class="color-accent-11" href="#">Innovation</a></li>
-                    <li><a class="color-accent-11" href="#">Strategy</a></li>
-                    <li><a class="color-accent-11" href="#">Power</a></li>
-                    <li><a class="color-accent-11" href="#">Vision</a></li>
-                </ul>
-                <div class="article_menu-mobile">
-                  <select class="select_option">
-                      <option selected disabled value="1">Culture</option>
-                      <option value="2">All </option>
-                      <option value="3">Leadership </option>
-                      <option value="4"> Systems</option>
-                      <option value="5"> Innovation </option>
-                      <option value="6"> Strategy </option>
-                      <option value="7"> Power </option>
-                      <option value="7"> Vision </option>
-                  </select>
-              </div>
-                <div class="articles_search-box">
-                    <input class="input__field" placeholder="Search by Name" type="text">
-                    <button type="submit">
-                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Search.svg" alt="img">                                 
-                    </button>
-                </div>
-              </div>
           </div>
       </section>
       <!-- Hero section .\ -->
 
-      <!-- articles product area -->
-      <div class="articles_product-area position-relative" id="main-content">
-        <div class="website__sidebar--account library__sidebar--account culture shadow-hover-color" id="website-info-sidebar">
+      <div class="position-relative" id="main-content">
+        <!-- Website sidebar account -->
+        <div class="website__sidebar--account library__sidebar--account shadow-hover-color" id="website-info-sidebar">
           <ul class="website-info-sidebar-inner">
             <li>
               <button>
@@ -269,7 +245,7 @@
             </li>
             <li>
               <button class="light__dark--btn light__to--dark" id="light__to--dark">
-                 <img class="dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
+                <img class="dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
                   <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
                     <g id="vuesax_linear_moon" data-name="vuesax/linear/moon" transform="translate(-108 -188)">
                       <g id="moon" transform="translate(108 188)">
@@ -283,7 +259,7 @@
                   </svg>                                                    
               </button>
             </li>
-            <li>
+            <li class="mb-30">
               <button>
                 <img class="light-img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon">
                 <svg class="dark-img" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
@@ -301,1089 +277,1141 @@
                 </svg>
               </button>
             </li>
+            <li class="mb-30">
+              <button class="zoom__btn--field zoom__in">
+                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="img">                      
+              </button>
+            </li>
+            <li>
+              <button class="zoom__btn--field zoom__out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="1.5" viewBox="0 0 14 1.5">
+                  <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </svg>                                            
+              </button>
+            </li>
           </ul>
         </div>
-        <div class="container">
-          <div class="articles_product-header d-flex justify-content-between align-items-center">
-              <span class="articles_product-title color-accent-3">X Articles</span>
-              <ul class="nav articles_product_tab_btn_wrapper color-accent-3">
-                <li>
-                    <a class="active" data-bs-toggle="tab" href="#article_grid" role="tab" aria-controls="article_grid" aria-selected="true">
-                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Grid_View.svg" alt="img">                                                                                                             
-                    </a>
-                </li>
-                <li>
-                    <a  data-bs-toggle="tab" href="#article_list" role="tab" aria-controls="article_list" aria-selected="false">
-                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_List_View.svg" alt="img">                                     
-                    </a>
-                </li>
-            </ul> 
-          </div>
-          <div class="articles_product-wrapper">
-              <div class="tab-content  home2_tab_content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="article_grid" role="tabpanel" >
-                      <div class="articles_product-inner">
-                          <div class="row mb--n50">
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>Culture Fundamentals</span>
-                                                  <h5>Introduction to Culture</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_8.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>Culture Fundamentals</span>
-                                                  <h5>What is Organisational Culture?</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>9</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_9.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>Culture Fundamentals</span>
-                                                  <h5>What is Organisational Culture?</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>Culture Fundamentals</span>
-                                                  <h5>The Cultural Picture</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>National Culture</span>
-                                                  <h5>6-D Model of National Culture</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>9</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>National Culture</span>
-                                                  <h5>Seven Dimensions of Culture</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>National Culture</span>
-                                                  <h5>Cultural Factors and Culture of Discipline</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>National Culture</span>
-                                                  <h5>TTheory of Basic Human Values</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
-                                  <article class="large_card card-shadow">
-                                      <a href="#">
-                                          <div class="large_card-thumbnail text-center">
-                                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
-                                          </div>
-                                          <figcaption class="large_card-content">
-                                              <div class="large_card-content_top">
-                                                  <span>National Culture</span>
-                                                  <h5>The Cultural Web</h5>
-                                              </div>
-                                              <div class="large_card-footer d-flex justify-content-between">
-                                                  <div class="large_card-likes  color-accent-3">
-                                                      <span>0 Likes</span>
-                                                  </div>
-                                                  <div class="large_card_comment  color-accent-10">
-                                                      <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
-                                                      <span>0</span>
-                                                  </div>
-                                              </div>
-                                          </figcaption>
-                                      </a>
-                                  </article>
-                              </div>
+        <!-- Website sidebar account .\ -->
+        <div class="hero__entrepreneurship--culture--content section-border-position">
+            <div class="container">
+              <div class="hero_content-style3 text-center">
+                <h2 class="hero_content-style3_title mb-50">Entrepreneurship</h2>
+                <ul class="article_menu-style4 mobile_none d-flex justify-content-center">
+                  <li><a class="color-accent-11" href="#">All</a></li>
+                  <li><a class="color-accent-11 active" href="#">Culture</a></li>
+                  <li><a class="color-accent-11" href="#">Leadership</a></li>
+                  <li><a class="color-accent-11" href="#">Systems</a></li>
+                  <li><a class="color-accent-11" href="#">Innovation</a></li>
+                  <li><a class="color-accent-11" href="#">Strategy</a></li>
+                  <li><a class="color-accent-11" href="#">Power</a></li>
+                  <li><a class="color-accent-11" href="#">Vision</a></li>
+                </ul>
+                <div class="article_menu-mobile">
+                  <select class="select_option">
+                      <option selected value="1">Culture</option>
+                      <option value="2">All </option>
+                      <option value="3">Leadership </option>
+                      <option value="4"> Systems</option>
+                      <option value="5"> Innovation </option>
+                      <option value="6"> Strategy </option>
+                      <option value="7"> Power </option>
+                      <option value="7"> Vision </option>
+                  </select>
+                </div>
+                <div class="articles_search-box">
+                    <input class="input__field" placeholder="Search by Name" type="text">
+                    <button type="submit">
+                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Search.svg" alt="img">                                 
+                    </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      
+        <!-- articles product area -->
+        <div class="articles_product-area">
+          <div class="container">
+            <div class="articles_product-header d-flex justify-content-between align-items-center">
+                <span class="articles_product-title color-accent-3">X Articles</span>
+                <ul class="nav articles_product_tab_btn_wrapper color-accent-3">
+                  <li>
+                      <a class="active" data-bs-toggle="tab" href="#article_grid" role="tab" aria-controls="article_grid" aria-selected="true">
+                          <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Grid_View.svg" alt="img">                                                                                                             
+                      </a>
+                  </li>
+                  <li>
+                      <a  data-bs-toggle="tab" href="#article_list" role="tab" aria-controls="article_list" aria-selected="false">
+                          <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_List_View.svg" alt="img">                                     
+                      </a>
+                  </li>
+              </ul> 
+            </div>
+            <div class="articles_product-wrapper">
+                <div class="tab-content  home2_tab_content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="article_grid" role="tabpanel" >
+                        <div class="articles_product-inner">
+                            <div class="row mb--n50">
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>Culture Fundamentals</span>
+                                                    <h5>Introduction to Culture</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_8.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>Culture Fundamentals</span>
+                                                    <h5>What is Organisational Culture?</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>9</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_9.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>Culture Fundamentals</span>
+                                                    <h5>What is Organisational Culture?</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>Culture Fundamentals</span>
+                                                    <h5>The Cultural Picture</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>National Culture</span>
+                                                    <h5>6-D Model of National Culture</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>9</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>National Culture</span>
+                                                    <h5>Seven Dimensions of Culture</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>National Culture</span>
+                                                    <h5>Cultural Factors and Culture of Discipline</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>National Culture</span>
+                                                    <h5>TTheory of Basic Human Values</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-50">
+                                    <article class="large_card card-shadow">
+                                        <a href="#">
+                                            <div class="large_card-thumbnail text-center">
+                                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Temporary_7.svg" alt="card-img">
+                                            </div>
+                                            <figcaption class="large_card-content">
+                                                <div class="large_card-content_top">
+                                                    <span>National Culture</span>
+                                                    <h5>The Cultural Web</h5>
+                                                </div>
+                                                <div class="large_card-footer d-flex justify-content-between">
+                                                    <div class="large_card-likes  color-accent-3">
+                                                        <span>0 Likes</span>
+                                                    </div>
+                                                    <div class="large_card_comment  color-accent-10">
+                                                        <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="icon">                                                              
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="article_list" role="tabpanel">
+                      <div class="categories__articles--table articles_product-table" >
+                          
+                        <div class="articles__categories--header color-accent-2 border__bottom d-flex justify-content-between mb-30 pb-10">
+                          <ul
+                            class="articles__categories--header__wrapper gap-30 d-flex">
+                          
+                            <li
+                              class="articles__categories--header__child width__70"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                                Code
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                            <li
+                              class="articles__categories--header__child width__200"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                              Module
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                            <li
+                              class="articles__categories--header__child width__270"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                              Title
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                          </ul>
+                          <ul
+                            class="articles__categories--header__wrapper gap-40 d-flex">
+                          
+                            <li
+                              class="articles__categories--header__child width__70"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                              Like
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                            <li
+                              class="articles__categories--header__child width__70"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                              Cmnts
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                            <li
+                              class="articles__categories--header__child width__100"
+                            >
+                              <span
+                                class="articles__categories--header__name"
+                              >
+                              5 mins
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="11.457"
+                                  height="7.457"
+                                  viewBox="0 0 11.457 7.457"
+                                >
+                                  <g
+                                    id="Group_7127"
+                                    data-name="Group 7127"
+                                    transform="translate(-873.674 -384.891)"
+                                  >
+                                    <line
+                                      id="Line_1136"
+                                      data-name="Line 1136"
+                                      x2="4.52"
+                                      y2="4.28"
+                                      transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                    <line
+                                      id="Line_1137"
+                                      data-name="Line 1137"
+                                      y1="4.28"
+                                      x2="4.52"
+                                      transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-width="1.5"
+                                    />
+                                  </g>
+                                </svg>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="articles__categories--inner color-accent-10 shadow-hover-color">
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 1.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Introduction to Culture</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
                           </div>
-                      </div>
-                  </div>
-                  <div class="tab-pane fade" id="article_list" role="tabpanel">
-                    <div class="categories__articles--table articles_product-table" >
-                        
-                      <div class="articles__categories--header color-accent-2 border__bottom d-flex justify-content-between mb-30 pb-10">
-                        <ul
-                          class="articles__categories--header__wrapper gap-30 d-flex">
-                        
-                          <li
-                            class="articles__categories--header__child width__70"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                              Code
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                          <li
-                            class="articles__categories--header__child width__200"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                            Module
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 1.2</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>What is Organisational Culture?</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                          <li
-                            class="articles__categories--header__child width__270"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                            Title
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                        </ul>
-                        <ul
-                          class="articles__categories--header__wrapper gap-40 d-flex">
-                        
-                          <li
-                            class="articles__categories--header__child width__70"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                            Like
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 1.3</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Cultural Perspectives</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                          <li
-                            class="articles__categories--header__child width__70"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                            Cmnts
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                          <li
-                            class="articles__categories--header__child width__100"
-                          >
-                            <span
-                              class="articles__categories--header__name"
-                            >
-                            5 mins
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="11.457"
-                                height="7.457"
-                                viewBox="0 0 11.457 7.457"
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 1.4</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>The Cultural Picture</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
                               >
-                                <g
-                                  id="Group_7127"
-                                  data-name="Group 7127"
-                                  transform="translate(-873.674 -384.891)"
-                                >
-                                  <line
-                                    id="Line_1136"
-                                    data-name="Line 1136"
-                                    x2="4.52"
-                                    y2="4.28"
-                                    transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                  <line
-                                    id="Line_1137"
-                                    data-name="Line 1137"
-                                    y1="4.28"
-                                    x2="4.52"
-                                    transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-width="1.5"
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="articles__categories--inner color-accent-10 shadow-hover-color">
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 1.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Introduction to Culture</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 1.2</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>What is Organisational Culture?</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 1.3</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Cultural Perspectives</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 1.4</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>The Cultural Picture</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 2.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>National Culture</span>
-                              </li>
-                              <li class="width__270">
-                                <span>6-D Model of National Culture</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 2.2</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>National Culture</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Seven Dimensions of Culture</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>National Culture</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Cultural Factors</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>The Cultural Web</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>3-Level Organisational Culture</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>The Four Gods</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items mb-20">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
-                        </div>
-                        <div class="articles__categories--items">
-                          <a class="articles__categories--link d-flex justify-content-between" href="#">
-                            <ul
-                              class="articles__categories--child gap-30 d-flex"
-                            >
-                              <li class=" width__70 categories__border--right">
-                                <span
-                                  >CLT 4.1</span
-                                >
-                              </li>
-                              <li class="width__200">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                              <li class="width__270">
-                                <span>Culture Fundamentals</span>
-                              </li>
-                            </ul>
-                            <ul
-                              class="articles__categories--child gap-40 d-flex"
-                            >
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
-                              </li>
-                              <li class="width__70">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
-                              </li>
-                              <li class="width__100">
-                                <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
-                              </li>
-                            </ul>
-                          </a>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 2.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>National Culture</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>6-D Model of National Culture</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 2.2</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>National Culture</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Seven Dimensions of Culture</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>National Culture</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Cultural Factors</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>The Cultural Web</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>3-Level Organisational Culture</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>The Four Gods</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items mb-20">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
+                          <div class="articles__categories--items">
+                            <a class="articles__categories--link d-flex justify-content-between" href="#">
+                              <ul
+                                class="articles__categories--child gap-30 d-flex"
+                              >
+                                <li class=" width__70 categories__border--right">
+                                  <span
+                                    >CLT 4.1</span
+                                  >
+                                </li>
+                                <li class="width__200">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                                <li class="width__270">
+                                  <span>Culture Fundamentals</span>
+                                </li>
+                              </ul>
+                              <ul
+                                class="articles__categories--child gap-40 d-flex"
+                              >
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Like.svg" alt="img"> 12</span>
+                                </li>
+                                <li class="width__70">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Comments_2.svg" alt="img"> 65</span>
+                                </li>
+                                <li class="width__100">
+                                  <span ><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Time.svg" alt="img"> 5 mins</span>
+                                </li>
+                              </ul>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-              </div>
-              <div class="pagination_area">
-                <ul class="pagination_wrapper color-accent-3 shadow-hover-color d-flex justify-content-center align-items-center">
-                    <li>
-                        <div class="pagination_link-side draggable">
-                            <a class="pagination_link " href="#">
-                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_4.svg" alt="icon">                                        
-                            </a>
-                            <a class="pagination_link " href="#">
-                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_3.svg" alt="icon">                                                                                   
-                            </a>
-                        </div>
-                    </li>
-                    <li><a class="pagination_link style" href="#">01</a></li>
-                    <li><span class="pagination_link style active">02</span> </li>
-                    <li><a class="pagination_link style" href="#">03</a></li>
-                    <li>
-                        <div class="pagination_link-side">
-                            <a class="pagination_link " href="#">
-                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_3.svg" alt="icon">                                                                                 
-                            </a>
-                            <a class="pagination_link " href="#">
-                                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_4.svg" alt="icon">                                                                                                                           
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="categories__pagination--mobile">
-                  <ul
-                    class="pagination__mobile--wrapper d-flex justify-content-center align-items-center"
-                  >
-                    <li>
-                      <a class="pagination__page--text prev" href="#">Prev</a>
-                    </li>
-                    <li class="categories__pagination--number d-flex align-items-center">
-                        <input class="pagination__type--input" placeholder="1" class="quantity" name="quantity" min="1" max="100" type="number">
-                        <span>of 3</span>
-                      </li>
-                    <li>
-                      <a class="pagination__page--text next" href="#">Next</a>
-                    </li>
-                  </ul>
                 </div>
-              </div> 
+                <div class="pagination_area">
+                  <ul class="pagination_wrapper color-accent-3 shadow-hover-color d-flex justify-content-center align-items-center">
+                      <li>
+                          <div class="pagination_link-side draggable">
+                              <a class="pagination_link " href="#">
+                                  <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_4.svg" alt="icon">                                        
+                              </a>
+                              <a class="pagination_link " href="#">
+                                  <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_3.svg" alt="icon">                                                                                   
+                              </a>
+                          </div>
+                      </li>
+                      <li><a class="pagination_link style" href="#">01</a></li>
+                      <li><span class="pagination_link style active">02</span> </li>
+                      <li><a class="pagination_link style" href="#">03</a></li>
+                      <li>
+                          <div class="pagination_link-side">
+                              <a class="pagination_link " href="#">
+                                  <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_3.svg" alt="icon">                                                                                 
+                              </a>
+                              <a class="pagination_link " href="#">
+                                  <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_4.svg" alt="icon">                                                                                                                           
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="categories__pagination--mobile">
+                    <ul
+                      class="pagination__mobile--wrapper d-flex justify-content-center align-items-center"
+                    >
+                      <li>
+                        <a class="pagination__page--text prev" href="#">Prev</a>
+                      </li>
+                      <li class="categories__pagination--number d-flex align-items-center">
+                          <input class="pagination__type--input" placeholder="1" type="text">
+                          <span>of 3</span>
+                        </li>
+                      <li>
+                        <a class="pagination__page--text next" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
+            </div>
           </div>
         </div>
+        <!-- articles product area .\ -->
       </div>
-      <!-- articles product area .\ -->
 
       <!-- Newsletter section -->
       <section class="newsletter__section pb-50">

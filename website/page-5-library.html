@@ -133,6 +133,14 @@
       <li>
         <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon"> Accessibility</a>
       </li>
+      <li>
+        <button class="zoom__in"><img class="articles_mobile_menu_icon_img zoom" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="icon">  Zoom In</button>
+      </li>
+      <li>
+        <button class="zoom__out"><svg class="articles_mobile_menu_icon_img" xmlns="http://www.w3.org/2000/svg" width="30" height="1.5" viewBox="0 0 14 1.5">
+          <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+        </svg>  Zoom Out</button>
+      </li>
     </ul>
   </nav>
   <!-- Cms article end -->
@@ -142,9 +150,8 @@
     <!-- header area start -->
     <header class="website__header--section z-index-99 position-relative">
       <div class="container-fluid p-0">
-        <div class="header__inner--style2 position-relative d-flex justify-content-between align-items-center">
-          
-            <div class="website__main--logo">
+        <div class="header__inner--style2 header__sticky d-flex justify-content-between align-items-center">
+            <div class="website__main--logo  ">
               <a class="d-flex align-items-center" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
                   <defs>
@@ -158,7 +165,7 @@
                   >Infotopia<span class="website__main--logo__text--inner">Hub</span></span>
               </a>
             </div>
-            <div class="main__menu">
+            <div class="main__menu laptop_device_none">
               <nav>
                 <ul class="d-flex">
                   <li><a href="#">Home </a></li>
@@ -170,15 +177,15 @@
                 </ul>
               </nav>
             </div>
-            <div class="header__website--account__style2 medium_device_none">
+            <div class="header__website--account__style2 laptop_device_none">
                 <ul class="d-flex align-items-center">
                   <li><a href="#">Login</a></li>
                   <li><a href="#">Sign Up</a></li>
                 </ul>
             </div>
-            <div class="main__header--right medium_device_block d-flex align-items-center">
-              <div class="header__account d-flex">
-                <a class="header__account--icon cms_article-icon d-none " href="#">
+            <div class="main__header--right laptop_device_block d-flex align-items-center">
+              <div class="header__account laptop_v_block d-flex">
+                <a class="header__account--icon cms_article-icon " href="#">
                   <img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Sub_Menu.svg" alt="icon">
                 </a>
                 <a class="mobile__menu--open__btn" href="#"><img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Menu.svg" alt="img"></a>
@@ -296,6 +303,16 @@
                           </div>
                       </div>
                   </div> 
+                  <div class="swiper-slide">
+                    <div class="article_count-item">
+                        <div class="article_count-icon">
+                            <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Articles_2.svg" alt="img">                                    
+                        </div>
+                        <div class="article_count-title color-accent-3">
+                            <span>12 Genres</span>
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>
             <div class="article_count-swiper_btn color-accent-8">
@@ -342,7 +359,7 @@
                   </svg>                                                    
               </button>
             </li>
-            <li>
+            <li class="mb-30">
               <button>
                 <img class="light-img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon">
                 <svg class="dark-img" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
@@ -360,6 +377,18 @@
                 </svg>
               </button>
             </li>
+            <li class="mb-30">
+              <button class="zoom__btn--field zoom__in">
+                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="img">                      
+              </button>
+            </li>
+            <li>
+              <button class="zoom__btn--field zoom__out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="1.5" viewBox="0 0 14 1.5">
+                  <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </svg>                                            
+              </button>
+            </li>
           </ul>
         </div>
         <div class="container">
@@ -367,7 +396,7 @@
             <div class="website__library_product_header d-flex justify-content-between">
               <div class="website__library--select color-accent-3 width-240">
                 <select class="select_option">
-                    <option selected disabled value="1">All Genres (85) </option>
+                    <option selected value="1">All Genres (85) </option>
                     <option value="2"> </option>
                     <option value="3"> </option>
                     <option value="4">  </option>
@@ -674,7 +703,7 @@
                     <a class="pagination__page--text prev" href="#">Prev</a>
                   </li>
                   <li class="categories__pagination--number d-flex align-items-center">
-                      <input class="pagination__type--input" placeholder="1" class="quantity" name="quantity" min="1" max="100" type="number">
+                      <input class="pagination__type--input" placeholder="1" type="text">
                       <span>of 3</span>
                     </li>
                   <li>

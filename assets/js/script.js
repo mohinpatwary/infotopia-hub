@@ -185,12 +185,12 @@
   });
 
 
-
   /* active class activation */
   $(".table_click_icon a").click(function () {
     $(".table_dropdown_contents").slideToggle();
     $(this).toggleClass("active");
   });
+
 /*
   Sorting active class
 */
@@ -208,35 +208,71 @@ if(sortingList){
   })
 }
   
-/* feature accordion activation */
-$(".feature__accordion_active_btn").click(function(){
-  $(".sidebar__Feature__body").addClass('active');
-  let articleSidebarMenu = document.querySelector('.articles_sidebar-menu__wrapper');
-
-  if(articleSidebarMenu.classList.contains('active')){
-    articleSidebarMenu.classList.remove('active');
-  }
- 
-});
-
-$('.sidebar__Feature-close__btn a').click(function(){
-  $(".sidebar__Feature__body").removeClass('active');
- 
-});
-
 
 })(jQuery);
 
+/*
+    Get window top offset
+  */
+    function TopOffset(el) {
+      let rect = el.getBoundingClientRect(),
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return { top: rect.top + scrollTop };
+    }
+    /*
+      Header sticky activation
+    */
+      const headerStickyWrapper = document.querySelector("header");
+      const headerStickyTarget = document.querySelector(".header__sticky");
+    
+      if (headerStickyTarget) {
+        window.addEventListener("scroll", function () {
+          let StickyTargetElement = TopOffset(headerStickyWrapper);
+          let TargetElementTopOffset = StickyTargetElement.top;
+    
+          if (window.scrollY > 100) {
+            headerStickyTarget.classList.add("sticky");
+          } else {
+            headerStickyTarget.classList.remove("sticky");
+          }
+        });
+      }
 
 
-// Nice select 2 activation
+
+/*
+  Header left offset
+*/
+function headerNavigationOffset(){
+  const headerMainArea = document.querySelector(".header__section")
+  const NavPageTitle = document.querySelector(".page__title--name");
+  if (window.outerWidth >= 1300) {
+    if(NavPageTitle){
+      const NavigationOffsetLeft = `${215 - NavPageTitle.clientWidth}px`;
+      headerMainArea.setAttribute(`style`, `--page-title-offset: ${NavigationOffsetLeft}`);
+    }
+  }
+  if (window.outerWidth <= 1299) {
+    if(NavPageTitle){
+      const NavigationOffsetLeft = `${188 - NavPageTitle.clientWidth}px`;
+      headerMainArea.setAttribute(`style`, `--page-title-offset: ${NavigationOffsetLeft}`);
+    }
+  }
+}
+headerNavigationOffset();
+window.addEventListener("resize", function () {
+  headerNavigationOffset();
+});
+
+/*
+  Nice select 2 activation
+*/
 let selectOptionAllTag = document.querySelectorAll(".select_option");
 if(selectOptionAllTag.length > 0){
   selectOptionAllTag.forEach((select) => {
     NiceSelect.bind(select);
   });
 }
-
 
 
 /*
@@ -351,15 +387,27 @@ const sortingList = document.querySelectorAll(
 if (sortingList) {
   sortingList.forEach(function (item) {
     item?.addEventListener("click", function (event) {
-      event.preventDefault();
-      if (item.parentElement.classList.contains("desc-active")) {
-        item.parentElement.classList.remove("desc-active");
-      } else {
-        if (item.parentElement.classList.contains("asc-active")) {
-          item.parentElement.classList.add("desc-active");
+      sortingList.forEach(function (item) {
+        if (item.parentElement.classList.contains("desc-active") && item.parentElement.classList.contains("active") == false) {
+          item.parentElement.classList.remove("desc-active");
+        }
+        if (item.parentElement.classList.contains("asc-active")  && item.parentElement.classList.contains("active") == false) {
           item.parentElement.classList.remove("asc-active");
-        } else {
-          item.parentElement.classList.add("asc-active");
+        }
+        item.parentElement.classList.remove("active");
+      });
+
+      this.parentElement.classList.add("active");
+          
+      if (this.parentElement.classList.contains("desc-active")) {
+        this.parentElement.classList.add("asc-active");        
+        this.parentElement.classList.remove("desc-active");
+      }else{
+        if(this.parentElement.classList.contains("asc-active")){
+          this.parentElement.classList.remove("asc-active");        
+          this.parentElement.classList.add("desc-active");
+        }else{
+          this.parentElement.classList.add("asc-active"); 
         }
       }
     });
@@ -853,3 +901,69 @@ if(pageZoomOutButtons.length > 0){
   })
 }
 
+
+/**
+ * Font settings for article page
+*/
+const fontsSettings = {
+  container: document.getElementById("article__font--settings-container"),
+  fontSize: {
+    normal: document.querySelector(".font__normal--settings"),
+    large: document.querySelector(".font__large--settings"),
+  },
+  fontsFamily: {
+    fontsList: document.querySelectorAll(".fonts__family--settings")
+  }
+}
+if(fontsSettings.container){
+  fontsSettings.fontSize.normal?.addEventListener("click", function(event){
+    fontsSettings.container.classList.add("fonts__normal");
+    fontsSettings.container.classList.remove("fonts__large");
+    localStorage.setItem("customFontSize", "fonts__normal");
+    fontsSettings.fontSize.normal.classList.add("active");
+    fontsSettings.fontSize.large.classList.remove("active");
+  });
+  fontsSettings.fontSize.large?.addEventListener("click", function(event){
+    fontsSettings.container.classList.add("fonts__large");
+    fontsSettings.container.classList.remove("fonts__normal");
+    localStorage.setItem("customFontSize", "fonts__large");
+    fontsSettings.fontSize.normal.classList.remove("active");
+    fontsSettings.fontSize.large.classList.add("active");
+  });
+  
+  if(fontsSettings.fontsFamily.fontsList.length > 0){
+    fontsSettings.fontsFamily.fontsList.forEach((button) => {
+      button.addEventListener("click", function(event){
+        fontsSettings.fontsFamily.fontsList.forEach((button) => {
+          button.classList.remove('active');
+        })
+        fontsSettings.container.setAttribute(`style`, `--custom-font-family: ${button.dataset.fontFamily}`);
+        localStorage.setItem("customFontFamily", `${button.dataset.fontFamily}`);
+        this.classList.add("active");
+      })
+    })
+  }
+  if(localStorage.getItem("customFontSize") !== null){
+    if(localStorage.getItem("customFontSize") == "fonts__large"){
+      // fontsSettings.container.classList.add("fonts__large");
+      // fontsSettings.container.classList.remove("fonts__normal");
+      fontsSettings.fontSize.normal.classList.remove("active");
+      fontsSettings.fontSize.large.classList.add("active");
+    }else{
+      // fontsSettings.container.classList.add("fonts__normal");
+      // fontsSettings.container.classList.remove("fonts__large");
+      fontsSettings.fontSize.normal.classList.add("active");
+      fontsSettings.fontSize.large.classList.remove("active");
+    }
+  }
+  if(localStorage.getItem("customFontFamily") !== null){
+    fontsSettings.fontsFamily.fontsList.forEach((button) => {
+      button.classList.remove("active");
+      if(button.dataset.fontFamily === localStorage.getItem("customFontFamily")){
+        button.classList.add("active");
+      }
+    })
+    // fontsSettings.container.setAttribute(`style`, `--custom-font-family: ${localStorage.getItem("customFontFamily")}`);
+  }
+  
+}

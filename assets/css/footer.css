@@ -138,6 +138,11 @@
   margin-bottom: 4rem;
   padding-bottom: 4rem;
 }
+@media only screen and (min-width: 768px) {
+  .footer_link_menu{
+      padding-left: 3rem;
+  }
+}
 .footer_link_menu::before{
   position: absolute;
     content: "";

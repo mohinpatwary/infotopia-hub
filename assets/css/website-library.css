@@ -1,4 +1,11 @@
 /* website library css */
+@media only screen and (min-width: 1200px){
+  .container.website-container-library{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 .library__section{
     position: relative;
     padding-bottom: 10rem;
@@ -84,41 +91,9 @@
     max-width: 15rem;
     width: 15rem;
   }
-  @media only screen and (min-width: 1366px) and (max-width: 1599px) {
-    .library__card.max-width-150 {
-      max-width: 17.2%;
-      width: 17.2%;
-    }
-  }
-  @media only screen and (min-width: 1200px) and (max-width: 1365px) {
-    .library__card.max-width-150 {
-      max-width: 22%;
-      width: 22%;
-    }
-  }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .library__card.max-width-150 {
-      max-width: 30%;
-      width: 30%;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .library__card.max-width-150 {
-      max-width: 30%;
-      width: 30%;
-    }
-  }
   @media only screen and (max-width: 767px) {
     .library__card.max-width-150 {
-        max-width: 29%;
-        width: 29%;
         margin-bottom: 0;
-    }
-  }
-  @media only screen and (max-width: 575px) {
-    .library__card.max-width-150 {
-        max-width: 45%;
-        width: 45%;
     }
   }
   .library__card:hover .library__card--thumbnail {
@@ -135,10 +110,10 @@
   .library__card--thumbnail a {
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: 0.9rem;
   }
   .library__card--thumbnail a img {
-    width: 100%;
+   width: 100%;
   }
   .library__card--title {
     font-size: 1.6rem;
@@ -235,18 +210,6 @@
   .website__sidebar--account.library__sidebar--account::before{
     display: none;
   }
-  .website-info-sidebar-inner{
-    position: relative;
-    }
-    .website-info-sidebar-inner::before{
-    position: absolute;
-    content: "";
-    width: 0.1rem;
-    height: 100%;
-    background: var(--color-border);
-    top: 0;
-    left: 2.5rem;
-    }
 
 
 

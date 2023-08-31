@@ -166,6 +166,18 @@
   
 
   /* about page css */
+  .website__sidebar--account.about__sidebar--account{
+      position: fixed;
+      transform: inherit;
+      top: 26.6rem;
+}
+  .website__sidebar--account.about__sidebar--account.is-affixed{
+    position: absolute !important;
+      top: 0;
+}
+.website__sidebar--account.about__sidebar--account::before{
+  display: none;
+}
   .about__section{
     max-width: 930px;
     padding-bottom: 10rem;
@@ -263,4 +275,11 @@
   font-size: 1.8rem;
   line-height: 3.3rem;
   color: var(--color-foreground-4);
+}
+
+.website__sidebar--account.about__sidebar--account.library-book {
+  top: -22.6rem;
+}
+.website__sidebar--account.about__sidebar--account.library-book.is-affixed {
+  top: 0;
 }

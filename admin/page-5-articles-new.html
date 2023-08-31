@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/user.css" />
     <link rel="stylesheet" href="../assets/css/admin.css" />
     <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="../assets/css/categories.css" />
     <link rel="stylesheet" href="../assets/css/darkcsscolor.css" />
     <!-- Modernizr JS -->
     <script src="../assets/js/vendor/modernizr-3.11.2.min.js"></script>
@@ -328,7 +329,7 @@
                         <ul class="breadcrumb__menu pb-10 d-flex align-items-center">
                           <li class="breadcrumb__menu--item color-accent-1 ">
                             <a href="#">
-                              Culture
+                              Article
                             </a>
                           </li>
                           <li class="breadcrumb__menu--item">
@@ -350,7 +351,7 @@
                                   <div class="select__box mb-30">
                                     <label class="input__label mb-12">Section</label>
                                     <select class="select_option">
-                                        <option selected disabled value="1">Entrepreneurship </option>
+                                        <option selected value="1">Entrepreneurship </option>
                                         <option value="2">Vision </option>
                                         <option value="3">Leadership </option>
                                         <option value="4">Culture </option>
@@ -363,7 +364,7 @@
                                 <div class="select__box mb-30">
                                     <label class="input__label mb-12">Category</label>
                                     <select class="select_option">
-                                        <option selected disabled value="1"> </option>
+                                        <option selected value="1"> </option>
                                         <option value="2"> </option>
                                         <option value="3">  </option>
                                         <option value="4">  </option>
@@ -373,7 +374,7 @@
                                 <div class="select__box mb-30">
                                     <label class="input__label mb-12">Module</label>
                                     <select class="select_option">
-                                        <option selected disabled value="1"> </option>
+                                        <option selected value="1"> </option>
                                         <option value="2"></option>
                                         <option value="3"> </option>
                                     </select>
@@ -412,7 +413,7 @@
                                 <div class="select__box">
                                     <label class="input__label mb-12">Author</label>
                                     <select class="select_option">
-                                        <option selected disabled value="1"> Roberto Saliba</option>
+                                        <option selected value="1"> Roberto Saliba</option>
                                         <option value="2"> </option>
                                         <option value="3">  </option>
                                         <option value="4">  </option>
@@ -422,7 +423,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="create_articles-step_wrapper">
+                        <div class="create_articles-step_wrapper mb-20">
                           <h5 class="create_articles-title mb-30">Images</h5>
                           <div class="create_articles-inner gap__210 d-flex">
                             <div class="create_articles-step color-accent-3 width-330">
@@ -548,7 +549,7 @@
                                   <button class="terms__condition--button"><img class="input__label__icon" src="https://firstclass.ams3.digitaloceanspaces.com/Small_Icon_Explanation.svg" alt="icon"></button>
                                 </div>
                                 <select class="select_option">
-                                    <option selected disabled value="1"> APA 7th Edition</option>
+                                    <option selected value="1"> APA 7th Edition</option>
                                     <option value="2"></option>
                                     <option value="3"> </option>
                                 </select>
@@ -571,7 +572,7 @@
                           </div>
                           <div class="create_articles-step_list">
                             <div class="category__wrapper--list module__list--wrapper-label">
-                                <div class="modules_category-list  reference module__list--item">
+                                <div class="modules_category-list  reference module__list--item first__item">
                                     <span class="input__label module__list--count-label">Reference (<span class="add__module--count">1</span>)</span>
                                     <div class="input__box modules_category-one">
                                         <input class="input__field" type="text">
@@ -581,95 +582,103 @@
                             <button class="add_module-btn color-accent-1" data-action="with_label" data-label="Reference">+ Add Reference</button>
                           </div>
                         </div>
-                        <div class="create_articles-step_wrapper">
+
+                        <div class="create_articles-step_wrapper mb-50">
                           <h5 class="create_articles-sub_title border__bottom pb-10 mb-50">All Sections</h5>
                           <div class="create_articles-inner gap__210 d-flex">
-                            <div class="create_articles-step">
-                              <h5 class="create_articles-title mb-30">Document</h5>
-                              <div class="input__box width-330 mb-30">
-                                <label class="input__label mb-12">Please upload a file in PDF Format</label>
-                                <div class="articles_file-upload">
-                                    <input type="file">
-                                    <div class="articles_file-upload_field">
-                                        <img src="https://firstclass.ams3.digitaloceanspaces.com/Small_Icon_Upload.svg" alt="icon">                                             
-                                    </div>
+                            <div class="create_articles-step width-330">
+                              <div class="create_articles-step__list">
+                                <h5 class="create_articles-title mb-30">Document</h5>
+                                <div class="input__box mb-30">
+                                  <label class="input__label mb-12">Please upload a file in PDF Format</label>
+                                  <div class="articles_file-upload">
+                                      <input type="file">
+                                      <div class="articles_file-upload_field">
+                                          <img src="https://firstclass.ams3.digitaloceanspaces.com/Small_Icon_Upload.svg" alt="icon">                                             
+                                      </div>
+                                  </div>
                                 </div>
                               </div>
+                              <div class="create_articles-step__list">
+                                <h5 class="create_articles-title mb-30">Sponsorship</h5>
+                                <div class="category__wrapper--list sponsor__wrapper--list">
+      
+                                  <!-- Single item -->
+                                  <div class="create_articles-inner module__list--item">
+                                    <div class="articles__sponsorship mb-30">
+                                      <div class="articles__sponsorshipry--list notification__box">
+                                        <div class="notify__button--header mb-12">
+                                          <label class="input__label">Name</label>
+                                          <button class="terms__condition--button"><img class="input__label__icon" src="https://firstclass.ams3.digitaloceanspaces.com/Small_Icon_Explanation.svg" alt="icon"></button>
+                                        </div>
+                                        <!--  Notification box start -->
+                                        <div class="terms__condition--message">
+                                          <button class="terms__condition--message__remove--button">
+                                            <svg id="vuesax_linear_add-square" data-name="vuesax/linear/add-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                              <g id="add-square" transform="translate(0 0)">
+                                                <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+                                              </g>
+                                              <path id="Vector-2" data-name="Vector" d="M0,0H15.8" transform="translate(17.585 6.415) rotate(135)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                              <path id="Vector-3" data-name="Vector" d="M0,15.8V0" transform="translate(17.585 17.585) rotate(135)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                            </svg>                                                           
+                                          </button>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        </div>
+                                        <!--  Notification box end -->
+                                        <div class="articles__sponsorshipry--inner position-relative d-flex align-items-center">
+                                          <div class="articles__sponsorshipry--input width-330">
+                                            <input type="text" class="input__field">
+                                          </div>
+                                          <button class="close_sponsor-btn close_module-btn"><svg xmlns="http://www.w3.org/2000/svg" width="19.997" height="19.997" viewBox="0 0 19.997 19.997">
+                                            <g id="vuesax_linear_close-circle" data-name="vuesax/linear/close-circle" transform="translate(-236 -252)">
+                                              <g id="close-circle" transform="translate(236 252)">
+                                                <path id="Vector" d="M8.332,16.664A8.332,8.332,0,1,0,0,8.332,8.356,8.356,0,0,0,8.332,16.664Z" transform="translate(1.666 1.666)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                <path id="Vector-2" data-name="Vector" d="M0,4.716,4.716,0" transform="translate(7.64 7.64)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                <path id="Vector-3" data-name="Vector" d="M4.716,4.716,0,0" transform="translate(7.64 7.64)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                <path id="Vector-4" data-name="Vector" d="M0,0H20V20H0Z" fill="none" opacity="0"></path>
+                                              </g>
+                                            </g>
+                                          </svg>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="create_articles-step width-330">
+                                      <div class="input__box mb-30">
+                                        <label class="input__label mb-12">Website Link</label>
+                                        <input class="input__field" type="text">
+                                      </div> 
+                                    </div>
+                                  </div>
+                                  <!-- Single item .\ -->
+                                </div>
+                                <button class="add_module-btn add-sponsor-btn color-accent-1" data-action="sponsor">+ Add Sponsor</button>
+                              </div>
                             </div>
-                            <div class="create_articles-step width-330">
-                              <h5 class="create_articles-title mb-30">Main Book</h5>
+                            <div class="create_articles-step mobile__order width-330">
+                              <h5 class="create_articles-title mb-30">Article Book</h5>
+                              <div class="create_articles-step_list mb-30">
+                                <div class="input__box mb-20">
+                                    <label class="input__label mb-12">Title</label>
+                                    <input class="input__field input-disabled" type="text">
+                                </div>
+                                <a class="choose-book-link color-accent-1" href="#" data-bs-toggle="modal" data-bs-target="#modalselectbook">Select Book</a>
+                              </div>
                               <div class="create_articles-step_list">
                                 <div class="input__box mb-20">
                                     <label class="input__label mb-12">Title</label>
-                                    <input class="input__field" type="text">
+                                    <input class="input__field input-disabled" placeholder="Entrepreneurial Leadership" type="text">
                                 </div>
-                                <a class="choose-book-link color-accent-1" href="#">Select Book</a>
+                                <a class="choose-book-link color-accent-1" href="#" data-bs-toggle="modal" data-bs-target="#modalbookremove">Remove Book</a>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="create_articles-step_wrapper mb-50">
-                          <h5 class="create_articles-title mb-30">Sponsorship</h5>
-                          <div class="category__wrapper--list sponsor__wrapper--list">
-
-                            <!-- Single item -->
-                            <div class="create_articles-inner module__list--item">
-                              <div class="articles__sponsorship mb-30">
-                                <div class="articles__sponsorshipry--list notification__box">
-                                  <div class="notify__button--header mb-12">
-                                    <label class="input__label">Name</label>
-                                    <button class="terms__condition--button"><img class="input__label__icon" src="https://firstclass.ams3.digitaloceanspaces.com/Small_Icon_Explanation.svg" alt="icon"></button>
-                                  </div>
-                                  <!--  Notification box start -->
-                                  <div class="terms__condition--message">
-                                    <button class="terms__condition--message__remove--button">
-                                      <svg id="vuesax_linear_add-square" data-name="vuesax/linear/add-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g id="add-square" transform="translate(0 0)">
-                                          <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
-                                        </g>
-                                        <path id="Vector-2" data-name="Vector" d="M0,0H15.8" transform="translate(17.585 6.415) rotate(135)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                        <path id="Vector-3" data-name="Vector" d="M0,15.8V0" transform="translate(17.585 17.585) rotate(135)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                      </svg>                                                           
-                                    </button>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                  </div>
-                                  <!--  Notification box end -->
-                                  <div class="articles__sponsorshipry--inner position-relative d-flex align-items-center">
-                                    <div class="articles__sponsorshipry--input width-330">
-                                      <input type="text" class="input__field">
-                                    </div>
-                                    <button class="close_sponsor-btn close_module-btn"><svg xmlns="http://www.w3.org/2000/svg" width="19.997" height="19.997" viewBox="0 0 19.997 19.997">
-                                      <g id="vuesax_linear_close-circle" data-name="vuesax/linear/close-circle" transform="translate(-236 -252)">
-                                        <g id="close-circle" transform="translate(236 252)">
-                                          <path id="Vector" d="M8.332,16.664A8.332,8.332,0,1,0,0,8.332,8.356,8.356,0,0,0,8.332,16.664Z" transform="translate(1.666 1.666)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                          <path id="Vector-2" data-name="Vector" d="M0,4.716,4.716,0" transform="translate(7.64 7.64)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                          <path id="Vector-3" data-name="Vector" d="M4.716,4.716,0,0" transform="translate(7.64 7.64)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                                          <path id="Vector-4" data-name="Vector" d="M0,0H20V20H0Z" fill="none" opacity="0"></path>
-                                        </g>
-                                      </g>
-                                    </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="create_articles-step width-330">
-                                <div class="input__box mb-30">
-                                  <label class="input__label mb-12">Website Link</label>
-                                  <input class="input__field" type="text">
-                                </div> 
-                              </div>
-                            </div>
-                            <!-- Single item .\ -->
- 
-
-                          </div>
-                          <button class="add_module-btn add-sponsor-btn color-accent-1" data-action="sponsor">+ Add Sponsor</button>
                         </div>
                       </div>
                       <div class="articles_editor-area">
                         <h5 class="create_articles-sub_title border__bottom pb-10 mb-50">Article Content</h5>
                         <div class="create_articles_header">
-                            <ul class="create_articles_header-btn left d-flex">
+                            <ul class="create_articles_header-btn shadow-hover-color-2 left d-flex">
                                 <li><button class="header_1--button"><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_H1.svg" alt="icon"></button></li>
                                 <li><button class="header_2--button"><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_H2.svg" alt="icon"></button></li>
                                 <li><button class="header_3--button"><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_H3.svg" alt="icon"></button></li>
@@ -766,19 +775,19 @@
                   </li>
                   <li>
                     <button class="light__dark--btn light__to--dark" id="light__to--dark">
-           <img class="dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
-            <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
-              <g id="vuesax_linear_moon" data-name="vuesax/linear/moon" transform="translate(-108 -188)">
-                <g id="moon" transform="translate(108 188)">
-                  <path id="Vector" d="M0,0H30V30H0Z" transform="translate(30.002 30.002) rotate(180)" fill="none" opacity="0"/>
-                  <g id="sun-03" transform="translate(1.346 1.346)">
-                    <path id="Path_9179" data-name="Path 9179" d="M18.655,12.828A5.828,5.828,0,1,1,12.828,7,5.828,5.828,0,0,1,18.655,12.828Z" transform="translate(0.828 0.828)" fill="none" stroke="#bebebe" stroke-width="1.5"/>
-                    <path id="Path_9180" data-name="Path 9180" d="M13.655,2V3.748m0,19.814v1.748M21.9,21.9,20.66,20.661M6.65,6.65,5.413,5.413m19.9,8.242H23.562m-19.814,0H2M21.9,5.413,20.661,6.65M6.65,20.661,5.414,21.9" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-width="1.5"/>
-                  </g>
-                </g>
-              </g>
-            </svg>                                                    
-        </button>
+                    <img class="dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
+                      <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
+                        <g id="vuesax_linear_moon" data-name="vuesax/linear/moon" transform="translate(-108 -188)">
+                          <g id="moon" transform="translate(108 188)">
+                            <path id="Vector" d="M0,0H30V30H0Z" transform="translate(30.002 30.002) rotate(180)" fill="none" opacity="0"/>
+                            <g id="sun-03" transform="translate(1.346 1.346)">
+                              <path id="Path_9179" data-name="Path 9179" d="M18.655,12.828A5.828,5.828,0,1,1,12.828,7,5.828,5.828,0,0,1,18.655,12.828Z" transform="translate(0.828 0.828)" fill="none" stroke="#bebebe" stroke-width="1.5"/>
+                              <path id="Path_9180" data-name="Path 9180" d="M13.655,2V3.748m0,19.814v1.748M21.9,21.9,20.66,20.661M6.65,6.65,5.413,5.413m19.9,8.242H23.562m-19.814,0H2M21.9,5.413,20.661,6.65M6.65,20.661,5.414,21.9" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-width="1.5"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>                                                    
+                  </button>
                   </li>
                   <li>
                     <button class="zoom__btn--field zoom__out">
@@ -994,6 +1003,660 @@
                   </div>
                 </div>
             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade uselibrary__modal__popup modal__bg__whaite" id="modalselectbook" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content style">
+        <div class="modal-body">
+          <div class="modal_content">
+            <div class="course__content--wrapper">
+              <div class="course__by--field__topbar mb-30">
+                <div class="search__box modal__search--box position-relative width-330">
+                  <input class="input__field bg-inherit" placeholder="Search by Name or Code" type="text">
+                  <button class="search__btn">
+                    <img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Search.svg" alt="icon">
+                  </button>
+                </div>
+              </div>
+
+              <div class="categories__articles--table categories__table--modal mb-50">
+                <div class="articles__categories--header categories__field--header d-flex justify-content-between gap-50 mb-30">
+                  <ul
+                    class="articles__categories--header__wrapper gap-40 d-flex"
+                  >
+                    <li
+                      class="articles__categories--header__child width__100"
+                    >
+                      <span class="articles__categories--header__name">
+                        Code
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.457"
+                          height="7.457"
+                          viewBox="0 0 11.457 7.457"
+                        >
+                          <g
+                            id="Group_7127"
+                            data-name="Group 7127"
+                            transform="translate(-873.674 -384.891)"
+                          >
+                            <line
+                              id="Line_1136"
+                              data-name="Line 1136"
+                              x2="4.52"
+                              y2="4.28"
+                              transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              id="Line_1137"
+                              data-name="Line 1137"
+                              y1="4.28"
+                              x2="4.52"
+                              transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </li>
+                    <li
+                      class="articles__categories--header__child width__100"
+                    >
+                      <span class="articles__categories--header__name">
+                        Field
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.457"
+                          height="7.457"
+                          viewBox="0 0 11.457 7.457"
+                        >
+                          <g
+                            id="Group_7127"
+                            data-name="Group 7127"
+                            transform="translate(-873.674 -384.891)"
+                          >
+                            <line
+                              id="Line_1136"
+                              data-name="Line 1136"
+                              x2="4.52"
+                              y2="4.28"
+                              transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              id="Line_1137"
+                              data-name="Line 1137"
+                              y1="4.28"
+                              x2="4.52"
+                              transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </li>
+                    <li
+                      class="articles__categories--header__child width__120"
+                    >
+                      <span class="articles__categories--header__name">
+                        Lorem Impsun
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.457"
+                          height="7.457"
+                          viewBox="0 0 11.457 7.457"
+                        >
+                          <g
+                            id="Group_7127"
+                            data-name="Group 7127"
+                            transform="translate(-873.674 -384.891)"
+                          >
+                            <line
+                              id="Line_1136"
+                              data-name="Line 1136"
+                              x2="4.52"
+                              y2="4.28"
+                              transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              id="Line_1137"
+                              data-name="Line 1137"
+                              y1="4.28"
+                              x2="4.52"
+                              transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </li>
+                  </ul>
+                  <ul
+                    class="articles__categories--header__wrapper d-flex"
+                  >
+                    <li
+                      class="articles__categories--header__child width__100"
+                    >
+                      <span class="articles__categories--header__name">
+                        Year
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.457"
+                          height="7.457"
+                          viewBox="0 0 11.457 7.457"
+                        >
+                          <g
+                            id="Group_7127"
+                            data-name="Group 7127"
+                            transform="translate(-873.674 -384.891)"
+                          >
+                            <line
+                              id="Line_1136"
+                              data-name="Line 1136"
+                              x2="4.52"
+                              y2="4.28"
+                              transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                            <line
+                              id="Line_1137"
+                              data-name="Line 1137"
+                              y1="4.28"
+                              x2="4.52"
+                              transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-width="1.5"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="articles__categories--inner shadow-hover-color"
+                  id="checkboxGroup"
+                  data-limit="2"
+                >
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check2">
+                        <input id="check2" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check3">
+                        <input id="check3" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check4">
+                        <input id="check4" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check5">
+                        <input id="check5" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check6">
+                        <input id="check6" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check7">
+                        <input id="check7" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check8">
+                        <input id="check8" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center mb-15"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check9">
+                        <input id="check9" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="categories__field--articles__items d-flex align-items-center"
+                  >
+                    <div class="categories__field--checkbox">
+                      <label class="check__box" for="check10">
+                        <input id="check10" type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="articles__categories--items categories__check--items">
+                      <a class="articles__categories--link d-flex justify-content-between" href="#">
+                        <ul
+                          class="articles__categories--child gap-40 d-flex"
+                        >
+                          <li class="width__100">
+                            <span>BKD-0001</span>
+                          </li>
+                          <li class="width__100">
+                            <span>Leadership</span>
+                          </li>
+                          <li class="width__120">
+                            <span>Lorem Impsun</span>
+                          </li>
+                        </ul>
+                        <ul
+                          class="articles__categories--child d-flex"
+                        >
+                          <li class="width__100">
+                            <span>2022</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination area -->
+              <div class="pagination__area mt-50">
+                <div class="pagination__area--inner d-flex justify-content-between">
+                  <ul
+                    class="pagination__wrapper d-flex justify-content-center align-items-center"
+                  >
+                    <li>
+                      <a class="pagination__page--text prev" href="#">Prev</a>
+                    </li>
+                    <li>
+                      <span class="pagination__page--number active">1</span>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">2</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">3</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">4</a>
+                    </li>
+                    <li>
+                      <span class="pagination__page--doted"> ... </span>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">17</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">18</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">19</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--number" href="#">20</a>
+                    </li>
+                    <li>
+                      <a class="pagination__page--text next color-accent-1" href="#">Next</a>
+                    </li>
+                  </ul>
+                  <div
+                    class="pagination__page--select d-flex align-items-center"
+                  >
+                    <div
+                      class="select__box page__select width-90"
+                    >
+                      <select class="select_option">
+                        <option selected value="1">10</option>
+                        <option value="2">8</option>
+                        <option value="3">10</option>
+                        <option value="4">4</option>
+                        <option value="5">2</option>
+                      </select>
+                    </div>
+                    <span class="page__select--text"
+                      >Per Page</span
+                    >
+                  </div>
+                </div>
+                <div class="categories__pagination--mobile">
+                  <ul
+                    class="pagination__mobile--wrapper d-flex justify-content-center align-items-center"
+                  >
+                    <li>
+                      <a class="pagination__page--text prev" href="#">Prev</a>
+                    </li>
+                    <li class="categories__pagination--number d-flex align-items-center">
+                        <input class="pagination__type--input" placeholder="1" type="text">
+                        <span>of 3</span>
+                      </li>
+                    <li>
+                      <a class="pagination__page--text next" href="#">Next</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Pagination area .\ -->
+            </div>
+            <div class="button__area d-flex justify-content-center mt-70 ">
+              <button class="outline__button outline--button" data-bs-dismiss="modal">
+                Cancel
+              </button>
+              <button
+                class="solid__button solid--button border-0"
+                data-bs-dismiss="modal"
+                data-bs-toggle="modal"
+                data-bs-target="#modalbookAdd"
+              >
+              Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modal__bg__whaite" id="modalbookAdd" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content style">
+        <div class="modal-body">
+          <div class="modal_content text-center">
+            <div class="modal_thumbnail">
+              <img
+                src="https://firstclass.ams3.digitaloceanspaces.com/Large_Icon_Material.svg"
+                alt=""
+              />
+            </div>
+            <p class="modal_desc">
+              The book has been added.
+            </p>
+            <div class="modal_btn-area">
+              <button class="solid__button solid--button border-0" data-bs-dismiss="modal">Return</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modal__bg__whaite" id="modalbookremove" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content style">
+        <div class="modal-body">
+          <div class="modal_content text-center">
+            <div class="modal_thumbnail">
+              <img
+                src="https://firstclass.ams3.digitaloceanspaces.com/Large_Icon_Material.svg"
+                alt=""
+              />
+            </div>
+            <p class="modal_desc">
+              The book has been removed.
+            </p>
+            <div class="modal_btn-area">
+              <button class="solid__button solid--button border-0" data-bs-dismiss="modal">Return</button>
             </div>
           </div>
         </div>

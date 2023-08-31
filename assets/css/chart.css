@@ -13,7 +13,7 @@
 .analytics__progressbar{
   gap: 3rem;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .analytics__progressbar{
     flex-wrap: wrap;
   }
@@ -531,7 +531,7 @@ ul.chart__horizontal--line__list {
 
 ul#chart__axis_value > li {
   line-height: 0;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 ul#chart__axis_value > li {
@@ -540,7 +540,7 @@ ul#chart__axis_value > li {
 }
 
 .chart__horizontal--line__item {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .chart__horizontal--line__item:last-child {
@@ -669,17 +669,17 @@ li.chart__verticle--line__item {
 }
 @media only screen and (min-width: 768px) {
   .analytics__chart--field.style2 {
-    padding: 2rem 3rem 3.8rem 1.3rem;
+    padding: 1.6rem 3rem 3.8rem 1.3rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .analytics__chart--field.style2 {
-    padding: 2rem 1rem 3.8rem 1rem;
+    padding: 1.6rem 1rem 3.8rem 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .analytics__chart--field.style2 {
-    padding: 2rem 6rem 3.8rem 1.3rem;
+    padding: 1.6rem 6rem 3.8rem 1.3rem;
   }
 }
 .analytics__chart--field.style3 {
@@ -903,13 +903,21 @@ li.gender--chart__horizontal--line__item + li.gender--chart__horizontal--line__i
   }
 }
 .analytics__chart--box.radar--chart__container {
-  padding: 1.8rem 0;
+  padding: 0.6rem 0 2.8rem;
 }
 
 .radar--chart__container .analytics__chart--field {
   padding: 1.2rem 1.5rem 0 1.5rem;
 }
-
+#radar--chart{
+  min-height: 37rem !important;
+}
+#radar--chart .apexcharts-canvas {
+  height: 37rem !important;
+}
+#radar--chart .apexcharts-canvas svg {
+  height: 37rem !important;
+}
 @media only screen and (min-width: 768px) {
   .monthly__statistic--chart {
     flex-grow: 1;
@@ -1020,13 +1028,13 @@ li.gender--chart__horizontal--line__item + li.gender--chart__horizontal--line__i
   min-width: 4.5rem;
 }
 .sponsors__progressbar .progressbar__content--list span{
-  color: var(--color-border);
+  color: var(--text-link-hover-color);
 }
 .sponsors__progressbar .clicks--per__view--active .clicks__button--per__button{
-  color: var(--text-link-hover-color);
+  color: var(--color-border);
 }
 .sponsors__progressbar .posts--per__view--active .posts__button--per__button{
-  color: var(--text-link-hover-color);
+  color: var(--color-border);
 }
 
 .chart__data--tooltip {
